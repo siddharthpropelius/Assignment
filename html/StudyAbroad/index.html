@@ -27,7 +27,9 @@
           <a href="#"><button>Apply Now</button></a>
         </li>
       </ul>
-      <span class="menu"><img src="./assets/menu.png" alt="menu" /></span>
+      <span class="menu">
+        <img src="./assets/menu.png" alt="navbar" id="menu" />
+      </span>
     </nav>
 
     <!--Hero Section-->
@@ -169,7 +171,9 @@
             </p>
           </div>
         </div>
-        <button>Join Now</button>
+        <div style="display: flex; justify-content: center">
+          <button>Join Now</button>
+        </div>
       </div>
     </section>
 
@@ -197,6 +201,15 @@
           </div>
 
           <div class="card">
+            <img src="./assets/co2.png" alt="news" style="width: 100%" />
+            <p>Study in Canada.</p>
+            <p style="padding-bottom: 20px; color: #37474fb8">
+              Torquem detraxit hosti et quidem faciunt, ut videro; interea hoc
+              epicurus in liberos.
+            </p>
+          </div>
+
+          <div class="cardD">
             <img src="./assets/co2.png" alt="news" style="width: 100%" />
             <p>Study in Canada.</p>
             <p style="padding-bottom: 20px; color: #37474fb8">
@@ -331,5 +344,12 @@
       </div>
     </section>
     <!--scripts-->
+    <script>
+      const burger = document.getElementById('menu');
+      const nav = document.getElementsByClassName('nav-links');
+      burger.addEventListener('click', () => {
+        nav[0].classList.toggle('show');
+      });
+    </script>
   </body>
 </html>
