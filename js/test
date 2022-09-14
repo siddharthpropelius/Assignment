@@ -1,0 +1,174 @@
+//1
+//Write a code to check whether the given username is available in 15 names or not, if the username is found then print the given username’s position and also print all the user usernames till the found user name.
+
+var arr = [
+  'siddharth',
+  'vikas',
+  'nidhi',
+  'sarla',
+  'pranshu',
+  'parth',
+  'rishi',
+  'raghav',
+  'sohan',
+  'sarda',
+  'piyush',
+  'ratan',
+  'amit',
+  'jatin',
+  'sunil',
+];
+
+var name = 'sohan';
+var pos = arr.indexOf(name);
+var find = arr.includes(name);
+
+if (find) {
+  console.log('name:' + name.search(arr));
+  console.log('Username Position : ' + pos);
+  for (let i = 0; i < arr.length; i++) {
+    if (name == arr[i]) {
+      console.log(arr[i]);
+      break;
+    } else {
+      console.log(arr[i]);
+    }
+  }
+} else {
+  console.log('Name does not found in the data');
+}
+
+//2
+//Write a code to check the user-entered password should have min length of 6 and a max length of 14 characters, the first character must be in upper case, and the password must contain lower case, upper case, numbers, and special characters.
+
+var string = 'S!ddh@rth1708';
+function password(value) {
+  let length = value.length;
+  if (length < 7 || length > 14) {
+    console.log(
+      'Password must be of minimum of 6 letter and maximum of 14 letters'
+    );
+  } else if (value.search(/[a-z]/i) < 0) {
+    console.log('Password must contain alphabets');
+  } else if (value.search(/[0-9]/) < 0) {
+    console.log('Password must contain Numeric values');
+  } else if (value.search(/[!#$%&?]/) < 0) {
+    console.log('Password must contain Special Characters');
+  } else {
+    console.log("Great! Password matches the criteria");
+  }
+}
+
+password(string);
+
+
+//3
+const operator = '/';
+const number1 = 2;
+const number2 = 3;
+let result;
+if (operator == '+') {
+  result = number1 + number2;
+} else if (operator == '-') {
+  result = number1 - number2;
+} else if (operator == '*') {
+  result = number1 * number2;
+} else {
+  result = number1 / number2;
+}
+
+console.log(`${number1} ${operator} ${number2} = ${result}`);
+
+//4
+var str = 'ABCKWQDEPFGMHODIJKALYMNCQOPQRBSTLBUVLWXYZ';
+var noRepeated = new Set(str);
+var sort = Array.from(noRepeated).sort();
+console.log(sort);
+
+//5
+var inputType = true;
+function checkType(value) {
+  var typr = typeof value;
+  console.log(typr);
+}
+
+checkType(inputType);
+
+//6
+var para =
+  "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.";
+
+var word = 'leap';
+var len = word.length;
+var find = para.indexOf(word);
+var slice = word.slice(-3);
+console.log('Position:' + find);
+console.log('Length of Word :' + len);
+console.log('Last 3 Letters of Word :' + slice);
+
+//7
+var string = 'Massachusetts';
+var slice = string.slice(3, 11);
+console.log(slice);
+//8
+var data = [
+  {
+    firstname: 'siddharth',
+    lastname: 'sohanlal',
+    middlename: 'vaishnav',
+    email: 'siddharth.vaishnav@propelius.com',
+    mobile: 9409239563,
+    dob: 17 / 08 / 2000,
+    enrollmentno: 32,
+  },
+  {
+    firstname: 'vikas',
+    lastname: 'sohanlal',
+    middlename: 'vaishnav',
+    email: 'vikasvaishnav12@gmail.com',
+    mobile: 8866307673,
+    dob: 17 / 08 / 2000,
+    enrollmentno: 33,
+  },
+];
+var updateID = 1;
+var updatedText = 'hello';
+var updateField = 'firstname';
+var update = (data[updateID].updateField = updatedText);
+console.log(data);
+//console.log(data);
+
+//9
+var data = [
+  {
+    id: 1,
+    firstname: 'siddharth',
+    lastname: 'sohanlal',
+    middlename: 'vaishnav',
+    email: 'siddharth.vaishnav@propelius.com',
+    salary: 10000,
+    mobile: 9409239563,
+    dob: 17 / 08 / 2000,
+    enrollmentno: 32,
+    photo: 'photo.jpg',
+  },
+  {
+    id: 2,
+    firstname: 'vikas',
+    lastname: 'sohanlal',
+    middlename: 'vaishnav',
+    email: 'vikasvaishnav12@gmail.com',
+    salary: 20000,
+    mobile: 8866307673,
+    dob: 17 / 08 / 2000,
+    enrollmentno: 33,
+    photo: 'photo.jpg',
+  },
+];
+var updateID = 1;
+var updatedText = 'hello';
+var updateField = 'firstname';
+var update = (data[updateID].updateField = updatedText);
+var removeID = 1;
+var newArray = data.filter((item) => item.id !== removeID);
+console.log(newArray);

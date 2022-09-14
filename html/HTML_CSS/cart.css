@@ -1,0 +1,105 @@
+body{
+    margin : 0 50px 0 50px;
+    font-size: 16px;
+    background-color: #F5F5F5;
+    text-decoration: none;
+}
+body a {
+   color:black;
+    text-decoration: none;
+}
+
+/* NAVBAR */
+nav{
+    display:flex;
+    justify-content: space-between;
+
+}
+
+.brand{
+    color:orange;
+}
+.nav-links{
+    display:flex;
+    gap:22px;
+}
+.nav-links li{
+    list-style: none;
+    cursor:pointer;
+}
+.cart{
+    width:22px;
+}
+
+/*HEADING*/
+.heading{
+    margin-left: 100px;
+}
+
+
+/* cards */
+.cardSection{
+    display:flex;
+    flex-direction:row;
+    flex-wrap:wrap;
+    justify-content: center;
+}
+
+.card{
+    background:#FFFFFF;
+    margin:2px 20px 20px 20px;
+}
+.card img{
+    width:100%;
+}
+.cardName{
+    display:flex;
+    justify-content:space-between;
+    margin:1px 8px 1px 8px;
+}
+.coupon{
+    display:flex;
+    justify-content: space-between;
+}
+.coupon input{
+    width:100%;
+    height:40px;
+    border-radius:3px;
+    margin:1px 0px 1px 8px;
+}
+
+.coupon button{
+    background: #FFA500;
+    border-radius:3px;
+    margin:1px 8px 1px 0px;
+    border: none;
+}
+.addbtn{
+    display:flex;
+}
+.addbtn button{
+    width:34px;
+    height:34px;
+   margin-left:8px;
+    margin-top:8px;
+    cursor:pointer;
+    border: none;
+}
+.cartSubTotal{
+    display:flex;
+    justify-content:space-between;
+    margin:12px 8px 0 8px ;
+}
+.orderbtn{
+    background-color: #FFA500;
+    width:100%;
+    height:34px;
+    border: none;
+}
+
+
+@media only screen  and (max-width:600px){
+    .heading{
+        margin-left: 40px;
+    }
+}
