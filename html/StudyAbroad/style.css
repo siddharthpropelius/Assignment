@@ -1,7 +1,9 @@
 body{
+    margin:0;
     font-family: 'Poppins';
     font-size: 22px;
     overflow-x:hidden;
+    box-sizing: border-box;
 }
 
 /*navbar*/
@@ -12,6 +14,7 @@ nav{
     margin-left: 100px;
     margin-right: 100px;
     font-size: 16px;
+    z-index:999;
 }
 
 .nav-links{
@@ -38,7 +41,7 @@ nav{
     height: 24px;
 }
 .menu {
-    display: none ;
+    display: none;
 }
 
 /*hero*/
@@ -50,6 +53,9 @@ nav{
     display: flex;
     justify-content: space-around;
     margin-bottom: 20px;
+    z-index:-1;
+    margin-top: 30px;
+    flex:1;
 }
 
 .hero .container .content {
@@ -57,9 +63,11 @@ nav{
 }
 
 .hero .container img{
-    width: 100%;
-    margin-top: 100px   ;
+    flex:1;
+    width: 700px;
+    margin-top: 0px   ;
     padding-left: 50px;
+    z-index: -1;
 }
 .hero .container button{
     width: 170px;
@@ -73,21 +81,22 @@ nav{
     margin-top:30px;
 }
 .hero .container .tagline {
-    font-size: 64px;
+    font-size: 52px;
 }
 .hero .container .des {
-    font-size: 22px;
+    font-size: 18px;
     color:#7D7D7D;
 }
 
 /*banner*/
 .banner .container{
     width:100%;
-    margin:10px 0 0 0 ;
+    margin-top:-28px;
     background-color: #F1F2FC;
     display: flex;
     justify-content: space-around;
-    padding: 10px 2px 10px 2px;
+    padding: 33px 2px 33px 2px;
+    z-index: 2;
 }
 .banner .container img{
     width: 120px;
@@ -107,28 +116,33 @@ nav{
 .services .container .cards{
     display: flex;
     justify-content: space-around;  
-    gap:88px;
-    margin:50px 100px 0 100px;
+    gap:30px;
+    margin:50px 100px 100px 100px;
 }
 .services .container .cards .card img{
     width: 50px;
+}
+.services .container .cards .card .title{
+    font-size: 16px;
 }
 
 .services .container .card{
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
   transition: 0.3s;
-  width: 22%;
+  width: 17%;
   border-radius: 8px;
-  padding: 10px 10px 10px 10px;
-  font-size: 12px;
+  padding: 10px 30px 10px 30px;
+  font-size: 10px;
 
 }
+
 
 /*news*/
 .news .container{
     margin-top: 18px;
     background-color: #F1F2FC;
     padding-top:40px ;
+    overflow-x:scroll;
 }
 
 .news .container .content{
@@ -138,21 +152,23 @@ nav{
 
 .news .container .cards{
     display: flex;
-    justify-content: space-around;
-    gap:0px;
-    margin:50px 100px 0 100px;
+    margin-left: 100px;
+    margin-right: 100px;
+   justify-content: center;
+   gap: 54px;
+    
 }
 
 .news .container .card{
 box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-  transition: 0.3s;
-  width: 25%;
+  width: 20%;
   border-radius: 8px;
+
 }
 .news .container .card p{
     
-    padding-left: 10px;
-    padding-right: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
     font-size: 12px;
    
 }
@@ -171,9 +187,8 @@ box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     margin-top:70px;
     text-align: center;
     align-items: center;
-    margin-bottom: 20px;
+    margin-bottom: 80px;
 }
-
 /* countries */
 
 .country .container{
@@ -189,13 +204,12 @@ box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 
 .country .container .cards{
     display: flex;
-    justify-content: space-around;
-    gap:20px;
+    justify-content: center;
+    gap:50px;
     margin:50px 100px 0px 100px;
 }
 
 .country .container .card{
-box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
   transition: 0.3s;
   width: 25%;
   border-radius: 22px;
@@ -232,12 +246,13 @@ box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 .testinomial .container .content{
     text-align: center;
     font-size: 17px;
+    overflow-x:scroll;
 }
 
 .testinomial .container .cards{
     display: flex;
-    justify-content: space-around;
-    gap:20px;
+    justify-content: center;
+    gap: 50px;
     margin:50px 100px 0px 100px;
 }
 
@@ -261,18 +276,20 @@ box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 }
 
 /*footer*/
-.footer{
+footer{
     background-color: #717CFF;
+    width: 100%;
+    overflow-x:hidden;
     
 }
-.footer .container{
+footer .container{
     display:flex;
-    height:400px;
+    height:300px;
     width: 100%; 
     justify-content: space-between;
     align-items: center;
     font-size: 12px;
-    padding: 0px 100px 0px 100px;
+    padding-left:200px;
 }
 
 
@@ -281,13 +298,13 @@ box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 .side{
     display: flex;;
     justify-content: space-around;
-    padding-right: 200px;
+    padding-right: 400px;
 }
 
 .footer .container .side .footer-links{
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;
     gap:40px
 }
 
@@ -300,6 +317,7 @@ box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     font-size: 16px;
     background-color: #717CFF;
     margin-bottom: 0px;
+    padding-bottom: 20px;
 }
 
 
@@ -315,12 +333,25 @@ box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     .nav-links{
         display: none;
     }
+    .hero .container button{
+        margin-top:-20px;
+    }
+    .banner .container{
+        margin-top:-8px;
+        
+    }
     .banner .container img{
         width: 70px;
     }
     .services .container{
         margin-right:0px;
         
+    }
+    .services .container .cards .card .title{
+        font-size: 12px;
+    }
+    .country .container .cards .card .title{
+        font-size: 12px;
     }
     .menu{
         display: block;
@@ -331,14 +362,17 @@ box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
         margin-right: 10px;
     }
     .hero .container img{
-        width: 150px;
+        width: 250px;
+        margin-right:-80px;
     }
     .hero .container .des { 
         font-size: 12px;
+        padding-left: 15px;
     }
 
     .hero .container .tagline{
         font-size: 32px;
+        padding-left: 10px;
     }
     .services .container .cards{
         display: flex;
@@ -350,6 +384,7 @@ box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     
     .services .container .cards p{
         font-size: 8px;
+        
        
     }
 
@@ -401,7 +436,7 @@ box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
         }
 
         .testinomial .container .cards{
-            margin: 0px 0px 20px 0px;
+            margin: 0px 20px 20px 20px;
             display: flex;
             flex-wrap: nowrap;
             overflow: scroll;
@@ -426,7 +461,16 @@ box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
         .news .container .cards{
             margin-left:0px ;
             margin-right: 0px;
+            display: flex;
+            justify-content: space-around;
+            gap:20px;
         }
+        .news .container .card{
+            box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+              width: 40%;
+              border-radius: 8px;
+            
+            }
 
         .news .container .cards .card p {
             font-size: 12px;
@@ -455,22 +499,30 @@ box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
         }
         .footer .container .content p {
             font-size: 12px;
+            color:white;
         }
         .footer .container{
             padding: 50px 0px 0px 0px;
         }
         .side{
             display: flex;;
-            justify-content: space-between;
             padding-right: 20px;
+            color:white;
         }
         
         .nav-links.show{
             display: flex;
             flex-direction: column;
+            width: 50%;
+            background-color: #f1f2fc;
+            padding: 10px 30px 10px 30px;
         }
         .icons{
             cursor: pointer;
+        }
+
+        .copyright{
+            padding-top: 70px;
         }
         
     
@@ -517,4 +569,14 @@ box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
         margin-left: 10px;
         margin-right: 10px;
     }
+}
+
+@media only screen and (max-width:1200){
+    .hero .container img{
+        width: 10px;
+    }
+}
+
+@media only screen and (max-width:800px){
+    
 }
