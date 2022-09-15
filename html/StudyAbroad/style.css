@@ -361,8 +361,12 @@ box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     }
     /*news*/
    .news .container .cards .card{
-    width:200px;;
+    width:150px;;
     overflow:auto;
+   }
+
+   .news .container .cards .card p {
+    font-size: 12px;
    }
 
    .news .container .cards{
