@@ -11,30 +11,32 @@
       href="https://fonts.googleapis.com/css?family=Poppins"
       rel="stylesheet"
     />
-
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css"
+      integrity="sha256-46r060N2LrChLLb5zowXQ72/iKKNiw/lAmygmHExk/o="
+      crossorigin="anonymous"
+    />
     <title>Executive Study Abroad</title>
   </head>
   <body>
     <!--Navbar-->
     <section class="navbar">
       <nav>
-        <h1>
-          <img src="./assets/logo.png" alt="logo" />
-        </h1>
-
-        <ul class="nav-links" id="nav-links">
+        <div class="logo">
+          <h1><img src="./assets/logo.png" alt="logo" /></h1>
+        </div>
+        <div class="openMenu">
+          <i><img src="./assets/menu.png" /></i>
+        </div>
+        <ul class="mainMenu">
           <li><a href="#">Home</a></li>
-          <li><a href="#about">About Us</a></li>
-          <li><a href="#services">Our Services</a></li>
-          <li><a href="#res">Responsibilities</a></li>
-          <li><a href="#country">Country</a></li>
-          <li>
-            <a href="#" target="_blank"><button>Apply Now</button></a>
-          </li>
+          <li><a href="#">Products</a></li>
+          <li><a href="#">Contact</a></li>
+          <li><a href="#">About</a></li>
+          <li><button class="apply">Apply Now</button></li>
+          <div class="closeMenu"><i class="fa fa-times"></i></div>
         </ul>
-        <span class="menu">
-          <img src="./assets/menu.png" alt="navbar" id="menu" />
-        </span>
       </nav>
     </section>
 
@@ -48,8 +50,8 @@
 
           <p class="des">
             We are always availed to consult on taking your higher education to
-            the next level so you can stay competitive in the global world. We
-            welcome the opportunity to work with you "today" for "tomorrow's"
+            the next level so you can stay competitive in the global world.<br />
+            We welcome the opportunity to work with you "today" for "tomorrow's"
             better career solutions.
           </p>
           <button>Apply Now &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;→</button>
@@ -86,9 +88,7 @@
             <p style="color: #37474f" class="title">University Admissions</p>
             <p style="color: #37474fb8">
               Maiores voluptas laboriously non dolorum perferendis fuga repellat
-              aut. Blanditiis quos in minus. Voluptatum quia quia voluptas
-              voluptatem vero ex possimus. Iure et consectetur dolorem dicta
-              accusantium fugiat.
+              aut. Blanditiis quos in minus.
             </p>
             <p style="color: #717cff">Learn More &nbsp;&nbsp;&nbsp;&nbsp;→</p>
           </div>
@@ -97,9 +97,7 @@
             <p style="color: #37474f" class="title">career Counselling</p>
             <p style="color: #37474fb8">
               Maiores voluptas laboriosam non dolorum perferendis fuga repellat
-              aut. Blanditiis quos in minus. Voluptatum quia quia voluptas
-              voluptatem vero ex possimus. Iure et consectetur dolorem dicta
-              accusantium fugiat.
+              aut. Blanditiis quos in minus.
             </p>
             <p style="color: #717cff">Learn More &nbsp;&nbsp;&nbsp;&nbsp;→</p>
           </div>
@@ -108,9 +106,7 @@
             <p style="color: #37474f" class="title">Visa Consultancy</p>
             <p style="color: #37474fb8">
               Maiores voluptas laboriosam non dolorum perferendis fuga repellat
-              aut. Blanditiis quos in minus. Voluptatum quia quia voluptas
-              voluptatem vero ex possimus. Iure et consectetur dolorem dicta
-              accusantium fugiat.
+              aut. Blanditiis quos in minus.
             </p>
             <p style="color: #717cff">Learn More &nbsp;&nbsp;&nbsp;&nbsp;→</p>
           </div>
@@ -120,9 +116,7 @@
             <p style="color: #37474f" class="title">Visa Consultancy</p>
             <p style="color: #37474fb8">
               Maiores voluptas laboriosam non dolorum perferendis fuga repellat
-              aut. Blanditiis quos in minus. Voluptatum quia quia voluptas
-              voluptatem vero ex possimus. Turet consectetur dolorem dicta
-              accusantium fugiat.
+              aut. Blanditiis quos in minus.
             </p>
             <p style="color: #717cff">Learn More &nbsp;&nbsp;&nbsp;&nbsp;→</p>
           </div>
@@ -140,38 +134,36 @@
             better career solutions.
           </p>
         </div>
-        <div class="cards">
-          <div class="card">
-            <img src="./assets//n1.png" alt="news" style="width: 100%" />
-            <p>17 aprl 2021</p>
-            <p>Come On In. The Water’s Fine (Mostly).</p>
-            <p style="color: #7d7d7d; font-size: 10px">
+        <div class="newscards">
+          <div class="newscard">
+            <img src="./assets/n1.png" alt="img" />
+            <p class="date">17 April 2022</p>
+            <p class="title">COME ON IN</p>
+            <p class="des">
               Torquem detraxit hosti et quidem faciunt, ut videro; interea hoc
               epicurus in liberos.
             </p>
           </div>
-
-          <div class="card">
-            <img src="./assets//n2.png" alt="news" style="width: 100%" />
-            <p>17 aprl 2021</p>
-            <p>Trump Lays Plans to Reverse Obama’s.</p>
-            <p style="color: #7d7d7d; font-size: 10px">
+          <div class="newscard">
+            <img src="./assets/n2.png" alt="img" />
+            <p class="date">17 April 2022</p>
+            <p class="title">COME ON IN</p>
+            <p class="des">
               Torquem detraxit hosti et quidem faciunt, ut videro; interea hoc
               epicurus in liberos.
             </p>
           </div>
-
-          <div class="card">
-            <img src="./assets//n3.png" alt="news" style="width: 100%" />
-            <p>17 aprl 2021</p>
-            <p>How a Little Bit of Hydra Regrows a Whole Animal.</p>
-            <p style="color: #7d7d7d; font-size: 10px">
+          <div class="newscard">
+            <img src="./assets/n2.png" alt="img" />
+            <p class="date">17 April 2022</p>
+            <p class="title">COME ON IN</p>
+            <p class="des">
               Torquem detraxit hosti et quidem faciunt, ut videro; interea hoc
               epicurus in liberos.
             </p>
           </div>
         </div>
-        <div style="display: flex; justify-content: center">
+        <div class="newsbtn" style="display: flex; justify-content: center">
           <button>Join Now</button>
         </div>
       </div>
@@ -237,59 +229,60 @@
             better career solutions.
           </p>
         </div>
-        <div class="cards">
-          <div class="card">
-            <div class="image">
-              <img
-                src="./assets/p1.png"
-                alt="news"
-                style="width: 80px; height: 80px"
-              />
+        <div class="testinomialcards">
+          <div class="testinomialcard">
+            <div class="sep">
               <div>
-                <p>Harrison Phillips</p>
-                <p style="color: #7d7d7d">student</p>
+                <img src="./assets/p1.png" alt="img" />
+              </div>
+              <div>
+                <p class="title">
+                  Harrison Phillips<br />
+                  <span style="color: #7d7d7d; font-size: 12px" class="st"
+                    >student</span
+                  >
+                </p>
               </div>
             </div>
-
-            <p class="des" style="padding-bottom: 20px; color: #37474fb8">
+            <p class="des">
               We are always availed to consult the next level so you can stay
               better career solutions.
             </p>
           </div>
-
-          <div class="card">
-            <div class="image">
-              <img
-                src="./assets/p2.png"
-                alt="news"
-                style="width: 80px; height: 80px"
-              />
+          <div class="testinomialcard">
+            <div class="sep">
               <div>
-                <p>Harrison Phillips</p>
-                <p style="color: #7d7d7d">student</p>
+                <img src="./assets/p2.png" alt="img" />
+              </div>
+              <div>
+                <p class="title">
+                  Harrison Phillips<br />
+                  <span style="color: #7d7d7d; font-size: 12px" class="st"
+                    >student</span
+                  >
+                </p>
               </div>
             </div>
-
-            <p class="des" style="padding-bottom: 20px; color: #37474fb8">
+            <p class="des">
               We are always availed to consult the next level so you can stay
               better career solutions.
             </p>
           </div>
-
-          <div class="card">
-            <div class="image">
-              <img
-                src="./assets/p3.png"
-                alt="news"
-                style="width: 80px; height: 80px"
-              />
+          <div class="testinomialcard">
+            <div class="sep">
               <div>
-                <p>Harrison Phillips</p>
-                <p style="color: #7d7d7d">student</p>
+                <img src="./assets/p3.png" alt="img" />
+              </div>
+              <div>
+                <p class="title">
+                  Harrison Phillips<br />
+                  <span style="color: #7d7d7d; font-size: 12px" class="st"
+                    >student</span
+                  >
+                </p>
               </div>
             </div>
-
-            <p class="des" style="padding-bottom: 20px; color: #37474fb8">
+            <p class="des">
               We are always availed to consult the next level so you can stay
               better career solutions.
             </p>
@@ -316,9 +309,18 @@
             <br />
           </div>
           <div class="icons">
-            <img src="./assets//instagram.svg" alt="logo" />&nbsp;
-            <img src="./assets//facebook.svg" alt="logo" />&nbsp;
-            <img src="./assets//twitter.svg" alt="logo" />
+            <img src="./assets/instagram.svg" alt="logo" />&nbsp;
+            <img
+              src="./assets/facebook.svg"
+              alt="logo"
+              class="fdesktop"
+            />&nbsp;
+            <img
+              src="./assets/facebook-mobile.svg"
+              alt="logo"
+              class="fmobile"
+            />&nbsp;
+            <img src="./assets/twitter.svg" alt="logo" />
           </div>
         </div>
         <div class="side">
@@ -346,11 +348,28 @@
     </footer>
     <!--scripts-->
     <script>
-      const burger = document.getElementById('menu');
-      const nav = document.getElementsByClassName('nav-links');
-      burger.addEventListener('click', () => {
-        nav[0].classList.toggle('show');
+      const mainMenu = document.querySelector('.mainMenu');
+      const closeMenu = document.querySelector('.closeMenu');
+      const openMenu = document.querySelector('.openMenu');
+      const menu_items = document.querySelectorAll('nav .mainMenu li a');
+
+      openMenu.addEventListener('click', show);
+      closeMenu.addEventListener('click', close);
+
+      // close menu when you click on a menu item
+      menu_items.forEach((item) => {
+        item.addEventListener('click', function () {
+          close();
+        });
       });
+
+      function show() {
+        mainMenu.style.display = 'flex';
+        mainMenu.style.top = '0';
+      }
+      function close() {
+        mainMenu.style.top = '-100%';
+      }
     </script>
   </body>
 </html>
