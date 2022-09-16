@@ -19,7 +19,7 @@ nav {
   nav .mainMenu {
     display: flex;
     list-style: none;
-   margin-top: 0px;
+   
   }
   nav .mainMenu li a {
     display: inline-block;
@@ -94,7 +94,6 @@ nav {
     cursor: pointer;
     font-size: 14px;
     height: 32px;
-    margin-top:30px;
 }
 .hero .container .tagline {
     font-size: 52px;
@@ -210,7 +209,7 @@ nav {
     font-size: 14px;
     height: 32px;
     align-items: center;
-    margin-top:70px;
+    margin-top:100px;
     text-align: center;
     align-items: center;
     margin-bottom: 80px;
@@ -378,7 +377,7 @@ footer .container{
       }
    
     .hero .container button{
-        margin-top:-20px;
+        margin-top:0px;
     }
     .banner .container{
         margin-top:-8px;
@@ -499,7 +498,8 @@ footer .container{
         }
 
         .testinomialcard img{
-            width:100px;
+            width:70px;
+            padding:10px 10px 10px 20px;
         }
         .testinomialcards{
            
@@ -571,6 +571,7 @@ footer .container{
         .copyright{
             padding-top: 70px;
         }
+        
         
     
 }
@@ -770,6 +771,22 @@ footer .container{
         border-radius: 22px;
         margin-bottom:  0px;
     }
+    .news .container button{
+        position:relative;
+        width: 100px;
+        background-color: #717CFF;
+        border-radius: 4px;
+        border-style: none;
+        color: #FFFFFF;
+        cursor: pointer;
+        font-size: 14px;
+        height: 28px;
+        align-items: center;
+        margin-top:70px;
+        text-align: center;
+        align-items: center;
+        margin-bottom: 80px;
+    }
 
 }
 @media screen and (min-width:2000px){
@@ -869,6 +886,22 @@ footer .container{
     }
     .banner .container img{
         width:300px
+    }
+    .news .container button{
+        position:relative;
+        width: 220px;
+        background-color: #717CFF;
+        border-radius: 4px;
+        border-style: none;
+        color: #FFFFFF;
+        cursor: pointer;
+        font-size: 32px;
+        height: 80px;
+        align-items: center;
+        margin-top:70px;
+        text-align: center;
+        align-items: center;
+        margin-bottom: 80px;
     }
 
 }
