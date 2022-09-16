@@ -240,8 +240,8 @@ nav {
   border-radius: 22px;
   margin-bottom: 40px;
 }
-.country .container .card img{
-    border-radius: 0px;
+.country .container .cards .card img{
+    border-radius: 0px 0px 0 0;
 }
 
 .country .container .cardD{
