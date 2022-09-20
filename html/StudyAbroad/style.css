@@ -172,7 +172,7 @@ nav {
 .news .container{
     margin-top: 18px;
     background-color: #F1F2FC;
-    padding-top:40px ;
+    padding-top:40px;
     overflow-x:scroll;
 }
 
@@ -248,6 +248,7 @@ nav {
 .country .container .content{
     text-align: center;
     font-size: 17px;
+    padding-bottom: 30px;
 }
 
 .country .container .cards{
@@ -294,17 +295,13 @@ nav {
     margin-left: 100px;
     margin-right: 100px;
     margin:auto;
-    max-width: 2000px;
-    background-color: #FAFAFA;
-    
+    background-color: #F1F2FC;   
 }
-
 .testinomial .container .content{
     text-align: center;
     font-size: 17px;
     padding-bottom:40px;
 }
-
 .testinomialcards{
     display:flex;
     overflow-x: scroll;
@@ -318,9 +315,7 @@ nav {
     border-radius: 12px;
     background-color: #FFFFFF;
     margin-bottom: 40px;
-
 }
-
 .testinomialcard .title{
     font-size: 16px;
     padding:0px 30px 0px 30px;
@@ -329,12 +324,12 @@ nav {
     margin-top:0px;
     font-size: 12px;
     padding:0px 0px 30px 30px;
+    color: #7D7D7D;
 }
 .testinomialcard img{
     width: 100px;
     padding:20px 30px 0px 30px;
 }
-
 .testinomialcards .testinomialcard .sep{
     display: flex;
 }
@@ -346,8 +341,7 @@ nav {
 footer{
     background-color: #717CFF;
     width: 100%;
-    overflow-x:hidden;
-    
+    overflow-x:hidden;   
 }
 footer .container{
     display:flex;
@@ -358,10 +352,6 @@ footer .container{
     font-size: 12px;
     padding-left:200px;
 }
-
-
-
-
 .side{
     display: flex;;
     justify-content: space-around;
@@ -390,8 +380,6 @@ footer .container{
 .icons .fmobile{
     display: none;
 }
-
-
 @media only screen and (max-width:1000px ) {
     body{
         overflow-x: hidden;
@@ -1252,7 +1240,6 @@ footer .container{
     }
 
 }
-
 @media screen and (max-width:2700px) and (min-width:2100px){
     nav{
         margin-top:-200px;
@@ -1302,6 +1289,9 @@ footer .container{
     }
     .services .container .content p {
         font-size: 16px;
+    }
+    .testinomialcard .des{
+        width:340px;
     }
 }
 @media screen and (max-width:1440px) and (min-width:1300px) {
